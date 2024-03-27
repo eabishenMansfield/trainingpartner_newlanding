@@ -1,0 +1,401 @@
+@import url('./reset_cssV1.css');
+
+
+:root {
+    /* font Sizes */
+    --heading-1: 61px;
+    --heading-2: 49px;
+    --heading-3: 39px;
+    --heading-4: 31px;
+    --heading-5: 25px;
+    --heading-6: 20px;
+    --para: 16px;
+    --small-para: 13px;
+    --support-heading: 10px;
+
+    /* Colors */
+    --default: 20%;
+    --main-color: 217 88%;
+    --dark-color: #1d1d1d;
+    --light-color: #ebebeb;
+    --grey-color: #929292;
+    --white: #ffff;
+
+    /* Sizes */
+    --size-02: 02px;
+    --size-04: 04px;
+    --size-06: 06px;
+    --size-08: 08px;
+    --size-10: 10px;
+    --size-12: 12px;
+    --size-14: 14px;
+    --size-16: 16px;
+    --size-18: 18px;
+    --size-20: 20px;
+    --size-22: 22px;
+    --size-24: 24px;
+    --size-26: 26px;
+    --size-28: 28px;
+    --size-32: 32px;
+    --size-36: 36px;
+}
+
+* {
+    outline-offset: 3px;
+    outline-color: hsl(var(--main-color) var(--default));
+}
+
+body {
+    font-family: "Work Sans", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--white-color);
+    color: var(--dark-color);
+    font-size: var(--para);
+}
+
+p {
+    margin: 0;
+}
+
+.brandColor {
+    color: hsl(var(--main-color) var(--default));
+}
+
+.brandbg {
+    background-color: hsl(var(--main-color) var(--default));
+
+}
+
+.landingHeading {
+    font-size: var(--heading-1);
+    letter-spacing: -0.2rem;
+    font-weight: 700;
+}
+
+.supportTop {
+    font-size: var(--heading-5);
+}
+
+.headingsText {
+    letter-spacing: -0.1rem;
+}
+
+.h3Text {
+    font-size: var(--heading-6);
+    font-weight: 500;
+}
+
+#landingHero {
+    padding-block: calc(var(--size-36) * 3);
+    position: relative;
+    overflow: hidden;
+    overflow: clip;
+}
+
+.blurrybg {
+    width: 150px;
+    height: 150px;
+    background-color: hsl(var(--main-color) var(--default));
+    position: absolute;
+    bottom: 0px;
+    left: 50px;
+    z-index: -1;
+    pointer-events: none;
+    -webkit-filter: blur(150px);
+    -ms-filter: blur(150px);
+    filter: blur(150px);
+}
+
+
+.image-content {
+    position: relative;
+    pointer-events: none;
+}
+
+.imgDefault {
+    position: absolute;
+    z-index: -1;
+}
+
+.img1 {
+    left: -50px;
+}
+
+.img2 {
+    width: 300px;
+    height: auto;
+    top: 300px;
+    right: -100px;
+}
+
+/* Hero text */
+
+.herologo {
+    width: 260px;
+    height: auto;
+    margin-block-end: var(--size-26);
+}
+
+.herologo img {
+    width: 100%;
+    height: 100%;
+}
+
+.centering {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    text-align: left;
+    margin-inline-start: 2rem;
+}
+
+/* Hero text */
+
+.form-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Form */
+
+
+.form-Container {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    margin-block-start: var(--size-26);
+    gap: 1.5rem;
+    border: 1px solid #cdcdcd;
+    width: 340px;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 05px 05px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-wrapper {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.form-wrapper input,
+.form-wrapper textarea {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #cecece;
+    outline-offset: 3px;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.form-wrapper label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 5px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.form-wrapper.textarea label {
+    top: 20px;
+    transform: translateY(-50%);
+}
+
+.form-wrapper input:focus+label,
+.form-wrapper textarea:focus+label,
+.form-wrapper input:not(:placeholder-shown)+label,
+.form-wrapper textarea:not(:placeholder-shown)+label {
+    top: -02px;
+    background-color: white;
+    border: 1px solid hsl(var(--main-color) var(--default));
+    font-size: 13px;
+    color: hsl(var(--main-color) var(--default));
+}
+
+.form-wrapper input:not(:placeholder-shown),
+.form-wrapper textarea:not(:placeholder-shown) {
+    border: 1px solid hsl(var(--main-color) var(--default));
+}
+
+.brand-btn {
+    border: 1px solid var(--light-color);
+    background-color: hsl(var(--main-color) var(--default));
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.flexWrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.googleBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+    padding: 10px;
+    border: 1px solid #cdcdcd;
+    border-radius: 05px;
+    line-height: normal;
+}
+
+.googleIcon svg {
+    width: 30px;
+    height: 30px;
+}
+
+.divdr {
+    width: 100%;
+    height: 1px;
+    border-radius: 50%;
+    background-color: #cdcdcd;
+    position: relative;
+    margin-block: var(--size-10);
+}
+
+.divdr::after {
+    content: "OR";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--white);
+    padding: 10px;
+    font-size: var(--small-para);
+}
+
+/* Form */
+
+#companyHire {
+    padding-block: var(--size-36);
+}
+
+.logoWrapper {
+    margin-block: var(--size-36);
+}
+
+.logoCont {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoCont img {
+    width: 180px;
+    height: auto;
+}
+
+.featuresWrapper {
+    margin-block: var(--size-36);
+
+}
+
+.featureCont {
+    height: 100%;
+    background-color: var(--white);
+    box-shadow: 0px 4.324763298034668px 64.87145233154297px 0px #00000014;
+    border: 1px solid #f0f0f0;
+    padding: var(--size-32);
+    border-radius: var(--size-04);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: var(--size-32);
+}
+
+.featureIcon {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.companyHre .featureIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.showcase {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.centeredImage {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    overflow: hidden;
+}
+
+.showCaseImages {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.showCaseImages img {
+    width: 100%;
+    height: 100%;
+}
+
+.instituteCont img {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+}
+
+.instituteCont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+footer img,
+footer a {
+    display: inline-block;
+}
+
+
+@media screen and (max-width:574px) {
+    #landingHero {
+        padding-block: var(--size-24);
+        text-align: center;
+    }
+
+    .supportTop {
+        text-align: center;
+    }
+
+    .landingHeading {
+        font-size: var(--heading-4);
+        letter-spacing: -0.15rem;
+        text-align: center;
+    }
+
+    .herologo {
+        width: 180px;
+    }
+
+    .form-Container {
+        padding-inline: var(--size-16);
+    }
+
+    .centering {
+        margin-inline-start: 0;
+        align-items: center;
+        text-align: start;
+    }
+}
