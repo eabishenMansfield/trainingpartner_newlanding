@@ -4,571 +4,329 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <title>Jobaskit | Training partners</title>
+
+    <title>Jobaskit | Training Institutes</title>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                "gtm.start": new Date().getTime(),
+                event: "gtm.js",
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != "dataLayer" ? "&l=" + l : "";
+            j.async = true;
+            j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, "script", "dataLayer", "GTM-58J4TJK");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- microsoft clarity -->
+    <script type="text/javascript">
+        (function (c, l, a, r, i, t, y) {
+            c[a] =
+                c[a] ||
+                function () {
+                    (c[a].q = c[a].q || []).push(arguments);
+                };
+            t = l.createElement(r);
+            t.async = 1;
+            t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0];
+            y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "ca634hpbtn");
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16470814434"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-16470814434');
+    </script>
+
+    <!-- Event snippet for Page view conversion page -->
+    <script>
+        gtag('event', 'conversion', { 'send_to': 'AW-16470814434/PqoACMqyuZUZEOLd8q09' });
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap_css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/markettraining.css">
+    <link rel="stylesheet" href="css/institute_style.css">
+    <style>
+        .scroll-link {
+            display: none;
+        }
+
+        .scrolled .og-link {
+            display: none;
+        }
+
+        .scrolled .scroll-link {
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
-    <section id="landingHero">
-        <div aria-hidden="true" class="blurrybg"></div>
+    <div class="bg-images" aria-hidden="true">
+    </div>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <!--<div class="overcover">-->
+        <!--        <div class="holidbg">-->
+        <!--            <img src="./css/holi2.webp" alt="">-->
+        <!--        </div>-->
+        <!--        <div class="holi2dbg">-->
+        <!--            <img src="./css/holidbg.webp" alt="">-->
+        <!--        </div>-->
+        <!--    </div>-->
         <div class="container">
-            <div class=" mx-md-4">
-                <div class="row">
-                    <div class="col-12 col-lg-7">
-                        <div class="centering">
-                            <div class="hero-text">
-                                <div class="herologo">
-                                    <a href="">
-                                        <img src="./assets/logo (1).png" alt="logo">
+            <a class="navbar-brand" href="index.php"><img src="images/logo.png" class="nav_logo" alt="" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item og-link">
+                        <a class="nav-link" href="../jobseeker/login.php">Jobseeker</a>
+                    </li>
+                    <li class="nav-item og-link">
+                        <a class="nav-link" href="../recruiter/login.php">Recruiter</a>
+                    </li>
+                    <li class="nav-item og-link">
+                        <a class="nav-link" href="clients.php">Clients</a>
+                    </li>
+                    <li class="nav-item og-link">
+                        <a class="nav-link" href="https://www.jobaskit.com/campus/index.php">Campus</a>
+                    </li>
+                    <li class="nav-item og-link">
+                        <a class="nav-link" href="training_institute/">Training</a>
+                    </li>
+                    <li class="nav-item scroll-link">
+                        <a class="nav-link" href="">Looking for Training & Placement</a>
+                    </li>
+                    <li class="nav-item scroll-link">
+                        <a class="nav-link" href="training_institute/">Become Our Training Partner</a>
+                    </li>
 
-                                    </a>
-                                </div>
-                                <p class="supportTop text-secondary fw-bold">Are you Running a Training Institute?</p>
-                                <h1 class=" landingHeading">Become a Jobaskit <br>
-                                    Training Partner!</h1>
-                                <p class="supportTop text-secondary fw-medium">
-                                    Be a Part of India's Largest
-                                    Training and Placement Network!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-5">
-                        <div class="image-content">
-                            <img class="img1 imgDefault" aria-hidden="true" src="./assets/images/Vector (1).webp"
-                                alt="bgimg">
-                            <img class="img2 imgDefault" aria-hidden="true" src="./assets/images/Vector (2).webp"
-                                alt="bgimg">
-                        </div>
-                        <div class="form-content">
-                            <form class="form-Container">
-                                <h3 class="h3Text text-center brandColor">Partner With Us!</h3>
-                                <a href="" class=" googleBtn">
-                                    <span class="googleIcon">
-                                        <svg id="Capa_1" style="enable-background:new 0 0 150 150;" version="1.1"
-                                            viewBox="0 0 150 150" xml:space="preserve"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                                            <style type="text/css">
-                                                .st0 {
-                                                    fill: #1A73E8;
-                                                }
-
-                                                .st1 {
-                                                    fill: #EA4335;
-                                                }
-
-                                                .st2 {
-                                                    fill: #4285F4;
-                                                }
-
-                                                .st3 {
-                                                    fill: #FBBC04;
-                                                }
-
-                                                .st4 {
-                                                    fill: #34A853;
-                                                }
-
-                                                .st5 {
-                                                    fill: #4CAF50;
-                                                }
-
-                                                .st6 {
-                                                    fill: #1E88E5;
-                                                }
-
-                                                .st7 {
-                                                    fill: #E53935;
-                                                }
-
-                                                .st8 {
-                                                    fill: #C62828;
-                                                }
-
-                                                .st9 {
-                                                    fill: #FBC02D;
-                                                }
-
-                                                .st10 {
-                                                    fill: #1565C0;
-                                                }
-
-                                                .st11 {
-                                                    fill: #2E7D32;
-                                                }
-
-                                                .st12 {
-                                                    fill: #F6B704;
-                                                }
-
-                                                .st13 {
-                                                    fill: #E54335;
-                                                }
-
-                                                .st14 {
-                                                    fill: #4280EF;
-                                                }
-
-                                                .st15 {
-                                                    fill: #34A353;
-                                                }
-
-                                                .st16 {
-                                                    clip-path: url(#SVGID_2_);
-                                                }
-
-                                                .st17 {
-                                                    fill: #188038;
-                                                }
-
-                                                .st18 {
-                                                    opacity: 0.2;
-                                                    fill: #FFFFFF;
-                                                    enable-background: new;
-                                                }
-
-                                                .st19 {
-                                                    opacity: 0.3;
-                                                    fill: #0D652D;
-                                                    enable-background: new;
-                                                }
-
-                                                .st20 {
-                                                    clip-path: url(#SVGID_4_);
-                                                }
-
-                                                .st21 {
-                                                    opacity: 0.3;
-                                                    fill: url(#_45_shadow_1_);
-                                                    enable-background: new;
-                                                }
-
-                                                .st22 {
-                                                    clip-path: url(#SVGID_6_);
-                                                }
-
-                                                .st23 {
-                                                    fill: #FA7B17;
-                                                }
-
-                                                .st24 {
-                                                    opacity: 0.3;
-                                                    fill: #174EA6;
-                                                    enable-background: new;
-                                                }
-
-                                                .st25 {
-                                                    opacity: 0.3;
-                                                    fill: #A50E0E;
-                                                    enable-background: new;
-                                                }
-
-                                                .st26 {
-                                                    opacity: 0.3;
-                                                    fill: #E37400;
-                                                    enable-background: new;
-                                                }
-
-                                                .st27 {
-                                                    fill: url(#Finish_mask_1_);
-                                                }
-
-                                                .st28 {
-                                                    fill: #FFFFFF;
-                                                }
-
-                                                .st29 {
-                                                    fill: #0C9D58;
-                                                }
-
-                                                .st30 {
-                                                    opacity: 0.2;
-                                                    fill: #004D40;
-                                                    enable-background: new;
-                                                }
-
-                                                .st31 {
-                                                    opacity: 0.2;
-                                                    fill: #3E2723;
-                                                    enable-background: new;
-                                                }
-
-                                                .st32 {
-                                                    fill: #FFC107;
-                                                }
-
-                                                .st33 {
-                                                    opacity: 0.2;
-                                                    fill: #1A237E;
-                                                    enable-background: new;
-                                                }
-
-                                                .st34 {
-                                                    opacity: 0.2;
-                                                }
-
-                                                .st35 {
-                                                    fill: #1A237E;
-                                                }
-
-                                                .st36 {
-                                                    fill: url(#SVGID_7_);
-                                                }
-
-                                                .st37 {
-                                                    fill: #FBBC05;
-                                                }
-
-                                                .st38 {
-                                                    clip-path: url(#SVGID_9_);
-                                                    fill: #E53935;
-                                                }
-
-                                                .st39 {
-                                                    clip-path: url(#SVGID_11_);
-                                                    fill: #FBC02D;
-                                                }
-
-                                                .st40 {
-                                                    clip-path: url(#SVGID_13_);
-                                                    fill: #E53935;
-                                                }
-
-                                                .st41 {
-                                                    clip-path: url(#SVGID_15_);
-                                                    fill: #FBC02D;
-                                                }
-                                            </style>
-                                            <g>
-                                                <path class="st14"
-                                                    d="M120,76.1c0-3.1-0.3-6.3-0.8-9.3H75.9v17.7h24.8c-1,5.7-4.3,10.7-9.2,13.9l14.8,11.5   C115,101.8,120,90,120,76.1L120,76.1z">
-                                                </path>
-                                                <path class="st15"
-                                                    d="M75.9,120.9c12.4,0,22.8-4.1,30.4-11.1L91.5,98.4c-4.1,2.8-9.4,4.4-15.6,4.4c-12,0-22.1-8.1-25.8-18.9   L34.9,95.6C42.7,111.1,58.5,120.9,75.9,120.9z">
-                                                </path>
-                                                <path class="st12"
-                                                    d="M50.1,83.8c-1.9-5.7-1.9-11.9,0-17.6L34.9,54.4c-6.5,13-6.5,28.3,0,41.2L50.1,83.8z">
-                                                </path>
-                                                <path class="st13"
-                                                    d="M75.9,47.3c6.5-0.1,12.9,2.4,17.6,6.9L106.6,41C98.3,33.2,87.3,29,75.9,29.1c-17.4,0-33.2,9.8-41,25.3   l15.2,11.8C53.8,55.3,63.9,47.3,75.9,47.3z">
-                                                </path>
-                                            </g>
-                                        </svg>
-                                    </span>
-                                    <span>
-                                        Continue with Google
-                                    </span>
-                                </a>
-
-                                <div class="divdr"></div>
-
-                                <div class="form-wrapper">
-                                    <input type="email" id="emailAdress" name="emailAdress" placeholder=" " required>
-                                    <label for="emailAdress">Email Address</label>
-                                </div>
-                                <button type="submit" class="brand-btn">Save</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+                </ul>
             </div>
         </div>
-    </section>
-    <section id="companyHire">
-        <div class="container">
-            <h2 class="text-center mt-3 fw-semibold headingsText">
-                Companies that hire from Us!
-            </h2>
-            <div class="logoWrapper">
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="logoCont">
-                            <img src="./assets/logos/Kotak_Mahindra_Group_logo.svg.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="logoCont">
-                            <img src="./assets/logos/puma-sports.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="logoCont">
-                            <img src="./assets/logos/Britannia_Industries_logo.svg.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="logoCont">
-                            <img src="./assets/logos/Hyundai.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-11 mx-auto">
+                <section id="headingSection">
+                    <div class="container">
+                        <div class="heading_flexWrapper">
+                            <h1 class="landingHead">Training Institutes</h1>
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="inputCover">
+                                    <input class="ipbox" type="text" placeholder="Search Institute" name="" id="">
+                                    <img src=" ./images/search_bar.webp" alt="search" aria-hidden="true">
+                                </div>
+                                <button class="filtersvg">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 4H14" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M10 4H3" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M21 12H12" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M8 12H3" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M21 20H16" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M12 20H3" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M14 2V6" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M8 10V14" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M16 18V22" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
 
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="filterBox">
+                            <div class="filter_heading">
+                                <div class="row">
+                                    <div class="col-12 col-md-4">
+                                        <h5 class="">Filter</h5>
+                                        <p class="text-muted">Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                    <div class="col-12 col-md-8">
+                                        <form action="">
+                                            <div class="row gy-3" id="formBox">
+                                                <div class="col-12 col-md-6 filterChild">
+                                                    <div class="form-wrapper">
+                                                        <input type="text" id="courseName" name="courseName"
+                                                            placeholder=" " required="">
+                                                        <label for="courseName">Course Name</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6 filterChild">
+                                                    <div class="form-wrapper">
+                                                        <input type="text" id="location" name="location" placeholder=" "
+                                                            required="">
+                                                        <label for="location">Location</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 filterChild">
+                                                    <div class="form-wrapper">
+                                                        <input type="text" id="InstituteName" name="InstituteName"
+                                                            placeholder=" " required="">
+                                                        <label for="InstituteName">Institute Name</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 filterChild">
+                                                    <button class="w-100 brand-btn text-decoration-none fw-medium"
+                                                        style="letter-spacing: 0.02rem;">
+                                                        Filter
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id=" instituteSection">
+                    <div class="container">
+                        <div class="mx-0 mx-md-2">
+                            <div class="helpercolor text-center nores" id="noresult">
+                                <p>No Institutes Found!</p>
+                                <button id="clear">View all Institutes</button>
+                            </div>
+                            <div class="row gy-5">
+                                <div class="col-12 col-md-6 col-lg-4 institutes">
+                                    <div class="institute_Card">
+                                        <div class="bg-img">
+                                            <img src="./images/cardBG.webp" alt="cardBG" aria-hidden="true">
+                                        </div>
+                                        <div class="bg-logo">
+                                            <img src="./images/Jobaskit.webp" alt="Jobaskit" aria-hidden="true">
+                                        </div>
+                                        <div class="contentWrap">
+                                            <div class="contentCard">
+                                                <div class="topcontent">
+                                                    <div class="imgdiv">
+                                                        <img src="./images/bufflogo.png" alt="bufflogo">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mainContentCard">
+                                                <div class="institute_name">
+                                                    <h3 class="nameofinstitue">Be The Guide
+                                                        Mentoring Academy</h3>
+                                                </div>
+                                                <div class="other_details">
+                                                    <p>No of courses: 6+</p>
+                                                    <p>Students Places: 25+</p>
+                                                    <a href="" class="brand-btn mt-2">View
+                                                        details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 institutes">
+                                    <div class="institute_Card">
+                                        <div class="bg-img">
+                                            <img src="./images/cardBG.webp" alt="cardBG" aria-hidden="true">
+                                        </div>
+                                        <div class="bg-logo">
+                                            <img src="./images/Jobaskit.webp" alt="Jobaskit" aria-hidden="true">
+                                        </div>
+                                        <div class="contentWrap">
+                                            <div class="contentCard">
+                                                <div class="topcontent">
+                                                    <div class="imgdiv">
+                                                        <img src="./images/bufflogo.png" alt="bufflogo">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mainContentCard">
+                                                <div class="institute_name">
+                                                    <h3 class="nameofinstitue">
+                                                        Mentoring Academy</h3>
+                                                </div>
+                                                <div class="other_details">
+                                                    <p>No of courses: 6+</p>
+                                                    <p>Students Places: 25+</p>
+                                                    <a href="" class="brand-btn mt-2">View
+                                                        details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
-
-            <h2 class="text-center mt-3 fw-semibold headingsText">
-                Your eye on the Training. <br>
-                Ours on placements
-            </h2>
-            <p class="text-center text-secondary">Lorem ipsum dolor sit amet consectetur expedita inventore
-                <br>
-                accusamus? Similique
-                voluptates, quas soluta
-            </p>
-            <div class="featuresWrapper">
-
-                <div class="row gy-4">
-                    <div class="col-12 col-md-4">
-                        <div class="featureCont">
-                            <div class="featureIcon">
-                                <img src="./assets/Icons/Students_Management.svg" alt="">
-                            </div>
-                            <div class="featureIconText">
-                                <h3 class="h3Text text-center brandColor fw-semibold">Student Management</h3>
-                                <p class="text-center fw-medium text-secondary">Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing elit</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" col-12 col-md-4">
-                        <div class="featureCont">
-                            <div class="featureIcon">
-                                <img src="./assets/Icons/Training_partners.svg" alt="">
-                            </div>
-                            <div class="featureIconText">
-                                <h3 class="h3Text text-center brandColor fw-semibold"> Training Partner</h3>
-                                <p class="text-center fw-medium text-secondary">Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing elit</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="featureCont">
-                            <div class="featureIcon">
-                                <img src="./assets/Icons/placement_support.svg" alt="">
-                            </div>
-                            <div class="featureIconText">
-                                <h3 class="h3Text text-center brandColor fw-semibold">Placement Assistance</h3>
-                                <p class="text-center fw-medium text-secondary">Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing elit</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <h2 class="text-center mt-3 fw-semibold headingsText">
-                Our Additional Services
-            </h2>
-
-            <div class="featuresWrapper">
-
-                <div class="row gy-4">
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="featureCont">
-                            <div class="featureIcon">
-                                <img src="./assets/Icons/Enquiry.svg" alt="">
-                            </div>
-                            <div class="featureIconText">
-                                <h3 class="h3Text text-center brandColor fw-semibold">24/7 Enquiry
-                                    Management</h3>
-                                <p class="text-center fw-medium text-secondary">Lorem ipsu nsectetur
-                                    adipisicing elit</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" col-12 col-md-6 col-lg-3">
-                        <div class="featureCont">
-                            <div class="featureIcon">
-                                <img src="./assets/Icons/University_Campus (1).svg" alt="">
-                            </div>
-                            <div class="featureIconText">
-                                <h3 class="h3Text text-center brandColor fw-semibold">Access College
-                                    Networks</h3>
-                                <p class="text-center fw-medium text-secondary">Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing elit</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="featureCont">
-                            <div class="featureIcon">
-                                <img src="./assets/Icons/Customer_experience.svg" alt="">
-                            </div>
-                            <div class="featureIconText">
-                                <h3 class="h3Text text-center brandColor fw-semibold">Better Customer
-                                    Experience</h3>
-                                <p class="text-center fw-medium text-secondary">Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing elit</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="featureCont">
-                            <div class="featureIcon">
-                                <img src="./assets/Icons/collage_network.svg" alt="">
-                            </div>
-                            <div class="featureIconText">
-                                <h3 class="h3Text text-center brandColor fw-semibold">Access College Networks</h3>
-                                <p class="text-center fw-medium text-secondary">Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing elit</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <h2 class=" fw-semibold headingsText mt-5">
-                Your Training Journey
-            </h2>
-            <p class=" text-secondary">Lorem ipsum dolor sit amet consectetur expedita inventore
-                <br>
-                accusamus? Similique
-                voluptates, quas soluta
-            </p>
-            <div class="featuresWrapper companyHre">
-
-                <div class="row">
-                    <div class="col-12 col-md-4">
-                        <div class="featureIcon">
-                            <img src="./assets/images/Student.webp" alt="">
-                        </div>
-
-                    </div>
-                    <div class=" col-12 col-md-4">
-                        <div class="featureIcon">
-                            <img src="./assets/images/course.webp" alt="">
-                        </div>
-
-                    </div>
-                    <div class=" col-12 col-md-4">
-                        <div class="featureIcon">
-                            <img src="./assets/images/Placement.webp" alt="">
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
-            <h2 class="text-center fw-semibold headingsText mt-5">
-                Collab A Course
-            </h2>
-            <p class="text-center text-secondary"><span class="fw-bold">Get 60% off</span> on 1st Premium Membership.
-                Enjoy all <br> above benefits
-                as a Premium
-                Member.
-            </p>
-            <div class="d-flex justify-content-center mt-5">
-                <div class="col-6">
-                    <img src=" ./assets/images/collab a course.webp" alt="CourseCOnt">
-                </div>
-            </div>
-
         </div>
-    </section>
-    <section class="my-5">
+    </div>
+    <section class="pt-3 pb-5">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6">
-                    <h2 class=" fw-semibold headingsText mt-5">
-                        Easy To View
-                    </h2>
-                    <p class=" text-secondary">Lorem ipsum dolor sit amet consectetur expedita inventore
-                        <br>
-                        accusamus? Similique
-                        voluptates, quas soluta
-                    </p>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="easytoUSeImg">
-                        <img src="./assets/images/Easy to view.webp" alt="easytoUSeImg">
+                <div class="col-8 mx-auto">
+                    <div class="PaginationWrapper">
+                        <button class="pageBtn disabled">Prev</button>
+                        <button class="pageBtn active">1</button>
+                        <button class="pageBtn ">2</button>
+                        <div class="rest">...</div>
+                        <button class="pageBtn ">30</button>
+                        <button class="pageBtn ">Next</button>
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="showcase">
-        <div class="showCaseImages">
-            <div class="col-12 col-md-9 mx-auto">
-                <img src="./assets/images/Overview image.webp" alt="">
-
-            </div>
-        </div>
-        <div class="centeredImage">
-            <div></div>
-            <div class="brandbg"></div>
-            <div class=""></div>
-        </div>
-        </div>
-    </section>
-
-    <section class="pb-5">
+    <section id="jobaskitAd">
         <div class="container">
-            <h2 class="text-center fw-semibold headingsText mt-0 ">
-                Collab A Course
-            </h2>
-
-            <div class="instituteLogo my-4">
-                <div class="row gy-5">
-                    <div class="col-6 col-lg-3">
-                        <div class="instituteCont">
-                            <img src="./assets/images/image 4.png" alt="Institute logos">
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-3">
-                        <div class="instituteCont">
-                            <img src="./assets/images/image 5.png" alt="Institute logos">
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-3">
-                        <div class="instituteCont">
-                            <img src="./assets/images/image 6.png" alt="Institute logos">
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-3">
-                        <div class="instituteCont">
-                            <img src="./assets/images/image 7.png" alt="Institute logos">
-                        </div>
-                    </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="imgad">
+                    <img src="./images/handshake.webp" alt="handshake">
                 </div>
-
+                <div>
+                    <h2 class="adheading">Become a Training Partner!!
+                    </h2>
+                    <a href="" class="adBtn">Register now</a>
+                </div>
             </div>
         </div>
-
     </section>
 
-    <footer class="brandbg text-light py-5">
-        <p class=" h3Text fw-medium mt-5 text-center">Jobaskit © CopyRight 2024.All Rights Reserved</p>
-        <ul class="list-unstyled gap-3 mt-4 mb-5 d-flex align-items-center justify-content-center">
-            <li><a href="">
-                    <img src="./assets/Icons/Facebook F.svg" alt="Facebook">
-                </a></li>
-            <li><a href="">
-                    <img src="./assets/Icons/Instagram.svg" alt="Instagram">
-                </a></li>
-            <li>
-                <a href="">
-                    <img src="./assets/Icons/TwitterX.svg" alt="TwitterX">
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="./assets/Icons/LinkedIn 2.svg" alt="LinkedIn">
-                </a>
-            </li>
-        </ul>
-    </footer>
-
-    <script src=" js/bootstrap_js/bootstrap.min.js">
-    </script>
-    <script src="js/marketing.js"></script>
+    <script src="./js/bootstrap_js/bootstrap.min.js"></script>
+    <script src="./js/institute_script.js"></script>
+    <script src="./js/institute_search.js"></script>
 </body>
 
 </html>
